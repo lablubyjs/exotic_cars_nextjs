@@ -12,5 +12,5 @@ export const Circle = styled.div`
     width: 0.35rem;
     height: 0.35rem;
     border-radius: 50%;
-    background-color: ${({theme}) => theme.colors.grey02};
+    background-color: ${({theme}) => theme.colors.button_more};
 `;

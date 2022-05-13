@@ -33,7 +33,7 @@ export const CarItemContainer = styled.div`
     width: 17.9rem;
     height: 13.9rem;
     border-radius: 20px;
-    background-color: ${({theme}) => theme.colors.white02};
+    background-color: ${({theme}) => theme.colors.screen_card_car_background};
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -43,8 +43,8 @@ export const CarItemContainer = styled.div`
         background: transparent
             linear-gradient(
                 45deg,
-                ${({theme}) => theme.colors.gradient01} 0%,
-                ${({theme}) => theme.colors.gradient02} 90%
+                ${({theme}) => theme.colors.primary_car_slider_gradient} 0%,
+                ${({theme}) => theme.colors.second_car_slider_gradient} 90%
             )
             0% 0% no-repeat;
 
@@ -74,7 +74,7 @@ export const CarItemPriceAndPeriod = styled.div`
         width: 75%;
         display: none;
         font-weight: 600;
-        color: ${({theme}) => theme.colors.white01};
+        color: ${({theme}) => theme.colors.screen_background};
         padding-top: 0.7rem;
     }
     & div {
@@ -85,7 +85,7 @@ export const CarItemPriceAndPeriod = styled.div`
             content: '$';
             position: static;
             transform: translate(-1px, -10px);
-            color: ${({theme}) => theme.colors.grey08};
+            color: ${({theme}) => theme.colors.primary_text};
             font-size: 0.8rem;
             font-weight: 700;
             height: 100%;

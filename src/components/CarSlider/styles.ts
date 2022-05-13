@@ -9,8 +9,8 @@ export const SliderItem = styled.div`
     border-radius: 10px;
     background: linear-gradient(
         45deg,
-        ${({theme}) => theme.colors.grey07},
-        ${({theme}) => theme.colors.grey07}
+        ${({theme}) => theme.colors.box_shadow_color},
+        ${({theme}) => theme.colors.box_shadow_color}
     );
     & div {
         max-width: 80%;
@@ -44,8 +44,8 @@ export const CarSliderContainer = styled.div`
                 height: 8rem;
                 background: linear-gradient(
                     45deg,
-                    ${({theme}) => theme.colors.gradient01} 0%,
-                    ${({theme}) => theme.colors.gradient02} 90%
+                    ${({theme}) => theme.colors.primary_car_slider_gradient} 0%,
+                    ${({theme}) => theme.colors.second_car_slider_gradient} 90%
                 );
                 transform: translateY(-0.8rem);
                 & div {

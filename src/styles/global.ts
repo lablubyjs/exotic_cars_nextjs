@@ -14,8 +14,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: ${theme.colors.white01};
-        font-family: ${theme.fonts.main};
+        background-color: ${theme.colors.screen_background};
+        font-family: ${theme.fonts.segoe_ui};
     }
 
     body::-webkit-scrollbar {
@@ -23,13 +23,13 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body::-webkit-scrollbar-track {
-        background-color: ${theme.colors.white01};
+        background-color: ${theme.colors.screen_background};
     }
 
     body::-webkit-scrollbar-thumb {
-        background-color: ${theme.colors.purple02};
+        background-color: ${theme.colors.screen_search_bar_background};
         border-radius: 20px;
-        border: 3px solid ${theme.colors.white01};
+        border: 3px solid ${theme.colors.screen_background};
     }
 
     button, a {

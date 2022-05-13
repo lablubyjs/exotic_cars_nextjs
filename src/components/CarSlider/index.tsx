@@ -20,7 +20,7 @@ const CarSlider = ({models, onChangeModelColor}: CarSliderProps) => {
             <Button
                 width={2}
                 height={2}
-                backgroundColor={theme.colors.grey08}
+                backgroundColor={theme.colors.primary_text}
                 borderRadius={30}
                 className="button-previous"
             >
@@ -65,7 +65,7 @@ const CarSlider = ({models, onChangeModelColor}: CarSliderProps) => {
             <Button
                 width={2}
                 height={2}
-                backgroundColor={theme.colors.grey08}
+                backgroundColor={theme.colors.primary_text}
                 borderRadius={30}
                 className="button-next"
             >

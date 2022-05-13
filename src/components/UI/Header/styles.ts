@@ -9,10 +9,10 @@ interface IHeaderProps {
 
 export const Menu = styled.div<IHeaderProps>`
 	display: ${({ menuIsActive }) => (menuIsActive ? 'block' : 'none')};
-	border-top: 2px solid ${({ theme }) => theme.colors.purple01};
+	border-top: 2px solid ${({ theme }) => theme.colors.button_auth};
 	width: 25px;
 	border-top-color: ${({ menuIsActive, theme }) =>
-		menuIsActive ? 'transparent' : theme.colors.purple01};
+		menuIsActive ? 'transparent' : theme.colors.button_auth};
 	cursor: pointer;
 	position: fixed;
 	right: 0;
@@ -25,7 +25,7 @@ export const Menu = styled.div<IHeaderProps>`
 		display: block;
 		width: 25px;
 		height: 2px;
-		background-color: ${({ theme }) => theme.colors.purple01};
+		background-color: ${({ theme }) => theme.colors.button_auth};
 		margin-top: 5px;
 		transition: 0.3s;
 		position: relative;
@@ -62,12 +62,12 @@ export const AuthContainer = styled.div`
 export const HeaderContainer = styled.header<IHeaderProps>`
 	width: 100%;
 	height: ${({ menuIsActive }) => (menuIsActive ? '100vh' : '4.5rem')};
-	box-shadow: 0px 10px 30px ${({ theme }) => theme.colors.grey07};
+	box-shadow: 0px 10px 30px ${({ theme }) => theme.colors.header_box_shadow_color};
 	display: flex;
 	align-items: center;
 	flex-direction: ${({ menuIsActive }) => (menuIsActive ? 'column' : 'row')};
 	justify-content: ${({ menuIsActive }) => (menuIsActive ? 'start' : 'center')};
-	background-color: ${({ theme }) => theme.colors.white01};
+	background-color: ${({ theme }) => theme.colors.screen_background};
 	padding: 0 6vw;
 	position: fixed;
 	top: 0;

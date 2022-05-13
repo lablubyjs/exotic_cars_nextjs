@@ -25,5 +25,5 @@ export const Content = styled.section`
 export const Text = styled.p<ITextProps>`
     font-size: ${({fontSize}) => `${fontSize}rem`};
     font-weight: ${({fontWeight}) => `${fontWeight}`};
-    color: ${({color, theme}) => (color ? `${color}` : theme.colors.grey08)};
+    color: ${({color, theme}) => (color ? `${color}` : theme.colors.primary_text)};
 `;

@@ -44,7 +44,7 @@ const SearchBar = (): JSX.Element => {
                 <Button
                     width={2}
                     height={2}
-                    backgroundColor={theme.colors.white01}
+                    backgroundColor={theme.colors.screen_background}
                     borderRadius={50}
                 >
                     <Image

@@ -85,8 +85,8 @@ export const CarDetailsContainer = styled.div`
     background: transparent
         linear-gradient(
             125deg,
-            ${({theme}) => theme.colors.white01},
-            ${({theme}) => theme.colors.grey05}
+            ${({theme}) => theme.colors.screen_background},
+            ${({theme}) => theme.colors.screen_car_details_background}
         )
         0% 0% no-repeat;
     padding: 1rem 2rem;

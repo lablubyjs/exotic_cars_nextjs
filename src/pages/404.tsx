@@ -24,7 +24,7 @@ const NotFound: NextPage = () => {
                 <Text
                     fontSize={2}
                     fontWeight="bold"
-                    color={theme.colors.purple01}
+                    color={theme.colors.button_auth}
                 >
                     Page Not Found
                 </Text>
@@ -35,14 +35,14 @@ const NotFound: NextPage = () => {
                 <Button
                     width={7}
                     height={2.5}
-                    backgroundColor={theme.colors.purple01}
+                    backgroundColor={theme.colors.button_auth}
                     borderRadius={20}
                     onClick={goToHome}
                 >
                     <Text
                         fontSize={1}
                         fontWeight="700"
-                        color={theme.colors.purple02}
+                        color={theme.colors.search_bar_background}
                     >
                         Go Home
                     </Text>

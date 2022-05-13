@@ -25,12 +25,12 @@ const Header = (): JSX.Element => {
                 <Button
                     width={5}
                     height={2}
-                    backgroundColor={theme.colors.white01}
+                    backgroundColor={theme.colors.screen_background}
                 >
                     <Text
                         fontSize={1}
                         fontWeight="700"
-                        color={theme.colors.purple01}
+                        color={theme.colors.button_auth}
                     >
                         Sign up
                     </Text>
@@ -38,15 +38,15 @@ const Header = (): JSX.Element => {
                 <Button
                     width={5}
                     height={2}
-                    borderColor={theme.colors.purple01}
+                    borderColor={theme.colors.button_auth}
                     borderWidth={2}
-                    backgroundColor={theme.colors.white01}
+                    backgroundColor={theme.colors.screen_background}
                     borderRadius={13}
                 >
                     <Text
                         fontSize={1}
                         fontWeight="700"
-                        color={theme.colors.purple01}
+                        color={theme.colors.button_auth}
                     >
                         Sign in
                     </Text>

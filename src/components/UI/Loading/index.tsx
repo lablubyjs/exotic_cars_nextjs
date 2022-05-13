@@ -9,7 +9,7 @@ const Loading = () => {
         <LoadingContainer>
             <ReactLoading
                 type="spin"
-                color={theme.colors.purple01}
+                color={theme.colors.button_auth}
                 height={25}
                 width={50}
             />

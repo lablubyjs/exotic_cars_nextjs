@@ -17,7 +17,7 @@ function MyApp({Component, pageProps}: AppProps) {
                 <Layout>
                     <GlobalStyle />
                     <NextNProgress
-                        color={theme.colors.purple01}
+                        color={theme.colors.button_auth}
                         stopDelayMs={200}
                         height={5}
                     />

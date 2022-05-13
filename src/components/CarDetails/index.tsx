@@ -73,9 +73,9 @@ const CarDetails = ({
                     <Button
                         width={9}
                         height={2.3}
-                        backgroundColor={theme.colors.white01}
+                        backgroundColor={theme.colors.screen_background}
                         borderRadius={25}
-                        borderColor={theme.colors.grey08}
+                        borderColor={theme.colors.primary_text}
                         borderWidth={1}
                         onClick={goToCatalogHandler}
                         className="button-left"
@@ -103,13 +103,13 @@ const CarDetails = ({
                         <Button
                             width={9}
                             height={2.3}
-                            backgroundColor={theme.colors.grey08}
+                            backgroundColor={theme.colors.primary_text}
                             borderRadius={25}
                         >
                             <Text
                                 fontSize={0.8}
                                 fontWeight="300"
-                                color={theme.colors.white01}
+                                color={theme.colors.screen_background}
                             >
                                 Book now
                             </Text>

@@ -6,7 +6,7 @@ export const SearchBarContainer = styled.div`
 	justify-content: space-between;
 	width: 30rem;
 	height: 50%;
-	background-color: ${({ theme }) => theme.colors.purple02};
+	background-color: ${({ theme }) => theme.colors.screen_search_bar_background};
 	border-radius: 18px;
 	padding: 0.23rem;
 
@@ -26,7 +26,7 @@ export const SearchBarContainer = styled.div`
 				font-family: inherit;
 				font-size: 1.2rem;
 				font-weight: 600;
-				color: ${({ theme }) => theme.colors.purple01};
+				color: ${({ theme }) => theme.colors.button_auth};
 				padding: 10px;
 			}
 		}
@@ -84,8 +84,8 @@ export const SearchForm = styled.form`
 		input[type='date'],
 		input::placeholder,
 		input:active {
-			font-family: ${({ theme }) => theme.fonts.main};
-			color: ${({ theme }) => theme.colors.grey09};
+			font-family: ${({ theme }) => theme.fonts.segoe_ui};
+			color: ${({ theme }) => theme.colors.placeholder_text};
 			font-weight: 500;
 			font-size: 0.75rem;
 		}
