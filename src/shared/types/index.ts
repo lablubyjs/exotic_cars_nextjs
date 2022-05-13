@@ -40,3 +40,14 @@ export type CarDetailsProps = {
     currentColorIndex: number;
     setCurrentColorIndex: (index: number) => void;
 };
+
+export type CarSlide = {
+    id: number;
+    photo: string;
+};
+
+export type CarSliderProps = {
+    models: CarSlide[];
+    onChangeModelColor: (index: number) => void;
+    currentIndex: number;
+};
