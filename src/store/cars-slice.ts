@@ -1,6 +1,6 @@
 import {createSlice, PayloadAction, createAsyncThunk} from '@reduxjs/toolkit';
 
-import {ICar, IModel} from '@shared/interfaces';
+import {ICar} from '@shared/interfaces';
 
 import {CarsSlice} from '@shared/types';
 
