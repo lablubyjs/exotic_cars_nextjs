@@ -14,6 +14,7 @@ import {
 } from '@store/cars-slice';
 
 import {carsServices} from '@shared/services';
+import Head from 'next/head';
 
 const CarDetailsPage: NextPage = ({car, carId}: any) => {
     const dispatch = useAppDispatch();
@@ -34,6 +35,9 @@ const CarDetailsPage: NextPage = ({car, carId}: any) => {
 
     return (
         <>
+            <Head>
+                <title>Exotic {car.model}</title>
+            </Head>
             <CarDetails
                 car={car}
                 currentColorIndex={colorIndex}
@@ -49,10 +53,10 @@ export async function getStaticProps({params}: any) {
     const carId = params.carId;
 
     try {
-        const car = await getCar(carId);
+        const response = await getCar(carId);
 
         return {
-            props: {car: car, carId: carId},
+            props: {car: response.car, carId: carId},
         };
     } catch (error) {
         return {

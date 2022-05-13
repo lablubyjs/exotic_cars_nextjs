@@ -16,7 +16,11 @@ export default async function handler(
     }
 
     try {
-        client = await connectDatabase();
+        client = await connectDatabase(
+            process.env.DB_USER!,
+            process.env.DB_PASSWORD!,
+            process.env.DB_NAME!
+        );
     } catch (error) {
         res.status(500).json({
             message: 'Connecting to the database failed!',
@@ -25,7 +29,7 @@ export default async function handler(
     }
 
     try {
-        result = await getAllCars(client, 'cars', {_id: 1});
+        result = await getAllCars(client, process.env.DB_COLLECTION!, {_id: 1});
     } catch (error) {
         res.status(500).json({message: 'Getting data failed!'});
         return;
