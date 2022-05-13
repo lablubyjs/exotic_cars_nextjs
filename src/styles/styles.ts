@@ -12,6 +12,16 @@ export const Container = styled.main`
     width: 100%;
 `;
 
+export const Content = styled.section`
+    padding: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+`;
+
 export const Text = styled.p<ITextProps>`
     font-size: ${({fontSize}) => `${fontSize}rem`};
     font-weight: ${({fontWeight}) => `${fontWeight}`};
